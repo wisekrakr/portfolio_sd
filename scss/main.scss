@@ -1,0 +1,272 @@
+@import "config"; //_congif.scss file with variables
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: rgba(lighten(#000, 6), 0.85);
+  color: rgba(darken($primary-color, 6), 0.8);
+}
+
+.text-second {
+  color: $secondary-color;
+}
+
+.badge {
+  color: $secondary-color;
+}
+
+/*================ Menu Header ===========*/
+header {
+  position: fixed; //always on top
+  z-index: 2; //the bigger the number, the closer it is
+  width: 100%;
+}
+
+/*================ Headings ===========*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+
+  &.large-heading {
+    // large-heading is attached to h1
+    font-size: 4.2rem;
+    padding: 2rem !important;
+  }
+
+  &.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 6), 0.5);
+  }
+
+  &.x-small-heading {
+    margin-bottom: 1rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(lighten($secondary-color, 6), 0.5);
+  }
+}
+
+.heading {
+  color: rgba(lighten($tertiary-color, 6), 0.85);
+  padding: 2rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.heading-underline {
+  width: 6rem;
+  height: 0.3rem;
+  background-color: rgba(lighten($secondary-color, 6), 0.85);
+  margin: 0 auto 2rem;
+}
+
+/*================ Buttons ===========*/
+.btn {
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  // &:hover{
+  //     background: $secondary-color;
+  // }
+}
+.large-btn {
+  background-color: rgba(darken($tertiary-color, 6), 0.85);
+  border-width: large;
+  border-radius: 5rem;
+  padding: 0.9rem 1.5rem;
+  white-space: normal;
+
+  @include easeOut;
+}
+
+.med-btn {
+  background-color: rgba(darken($secondary-color, 6), 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem;
+  @include easeOut;
+}
+
+.small-btn {
+  background-color: rgba(darken($secondary-color, 6), 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.3rem 0.75rem;
+  margin: 0.5rem;
+  @include easeOut;
+}
+
+/*================ Text Styles ===========*/
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/*================ Main section ===========*/
+#main {
+  background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/coding/coding.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    background: #4ac7c2;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    @include easeOut;
+
+    &:hover {
+      background: rgba(darken($primary-color, 6), 0.85);
+    }
+  }
+
+  .lead {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  h1 {
+    text-shadow: #fff 2px 2px 10px;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+
+  overflow: auto;
+  padding: 2rem 2rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .card-aos {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid: 2rem;
+    background: rgb(236, 236, 236);
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: 2rem;
+      color: rgba(darken($secondary-color, 6), 0.85);
+    }
+
+    img {
+      height: 400px;
+    }
+
+    & > div {
+      padding: 2rem;
+    }
+    &:nth-child(even) img {
+      order: 2;
+    }
+
+    .btn {
+      display: inline-block;
+      background: rgba(darken($primary-color, 6), 0.85);
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      margin-top: 2rem;
+      cursor: pointer;
+      @include easeOut;
+
+      &:hover {
+        background: #4ac7c2;
+        color: #383535;
+      }
+    }
+  }
+}
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/*================ Footer ===========*/
+#footer {
+  background-color: rgba(lighten($primary-color, 6), 0.85);
+  color: #fff;
+  padding-top: 2rem 0 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .footer-main {
+    padding: 1rem;
+  }
+
+  strong {
+    margin-top: 15rem;
+  }
+
+  a {
+    display: inline-block;
+    background: #4ac7c2;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    @include easeOut;
+
+    &:hover {
+      background: rgba(darken($primary-color, 6), 0.85);
+    }
+  }
+
+  img {
+    height: 3rem;
+    margin: 1.5rem 0;
+  }
+
+  hr.socket {
+    border-top: 0.2rem solid $secondary-color;
+    width: 100%;
+  }
+
+  //For Pages that don't have a page full of content
+  &.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@import "mobile"; //run after everything else is done

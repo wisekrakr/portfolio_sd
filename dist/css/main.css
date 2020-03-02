@@ -1,0 +1,224 @@
+.bg-light {
+  background-color: rgba(217, 216, 216, 0.85); }
+
+.bg-dark {
+  background-color: rgba(106, 97, 97, 0.85); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: rgba(15, 15, 15, 0.85);
+  color: rgba(74, 67, 67, 0.8); }
+
+.text-second {
+  color: #4ac7c2; }
+
+.badge {
+  color: #4ac7c2; }
+
+/*================ Menu Header ===========*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+/*================ Headings ===========*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800; }
+  h1.large-heading,
+  h2.large-heading,
+  h3.large-heading {
+    font-size: 4.2rem;
+    padding: 2rem !important; }
+  h1.small-heading,
+  h2.small-heading,
+  h3.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(106, 97, 97, 0.5); }
+  h1.x-small-heading,
+  h2.x-small-heading,
+  h3.x-small-heading {
+    margin-bottom: 1rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(97, 206, 202, 0.5); }
+
+.heading {
+  color: rgba(80, 55, 120, 0.85);
+  padding: 2rem; }
+
+h3.heading {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem; }
+
+.heading-underline {
+  width: 6rem;
+  height: 0.3rem;
+  background-color: rgba(97, 206, 202, 0.85);
+  margin: 0 auto 2rem; }
+
+/*================ Buttons ===========*/
+.btn {
+  border: 0;
+  margin-bottom: 0.3rem; }
+
+.large-btn {
+  background-color: rgba(52, 35, 78, 0.85);
+  border-width: large;
+  border-radius: 5rem;
+  padding: 0.9rem 1.5rem;
+  white-space: normal;
+  transition: all 0.75s ease-out; }
+
+.med-btn {
+  background-color: rgba(57, 185, 180, 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem;
+  transition: all 0.75s ease-out; }
+
+.small-btn {
+  background-color: rgba(57, 185, 180, 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.3rem 0.75rem;
+  margin: 0.5rem;
+  transition: all 0.75s ease-out; }
+
+/*================ Text Styles ===========*/
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem; }
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+/*================ Main section ===========*/
+#main {
+  background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/coding/coding.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  #main a {
+    text-decoration: none;
+    display: inline-block;
+    background: #4ac7c2;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.75s ease-out; }
+    #main a:hover {
+      background: rgba(74, 67, 67, 0.85); }
+  #main .lead {
+    font-size: 2rem;
+    color: #fff; }
+  #main h1 {
+    text-shadow: #fff 2px 2px 10px; }
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 2rem 2rem; }
+  .container a {
+    text-decoration: none; }
+  .container img {
+    width: 100%; }
+  .container .card-aos {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid: 2rem;
+    background: #ececec;
+    margin-bottom: 2rem; }
+    .container .card-aos h3 {
+      margin-bottom: 2rem;
+      color: rgba(57, 185, 180, 0.85); }
+    .container .card-aos img {
+      height: 400px; }
+    .container .card-aos > div {
+      padding: 2rem; }
+    .container .card-aos:nth-child(even) img {
+      order: 2; }
+    .container .card-aos .btn {
+      display: inline-block;
+      background: rgba(74, 67, 67, 0.85);
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      margin-top: 2rem;
+      cursor: pointer;
+      transition: all 0.75s ease-out; }
+      .container .card-aos .btn:hover {
+        background: #4ac7c2;
+        color: #383535; }
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem; }
+
+/*================ Footer ===========*/
+#footer {
+  background-color: rgba(106, 97, 97, 0.85);
+  color: #fff;
+  padding-top: 2rem 0 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  #footer .footer-main {
+    padding: 1rem; }
+  #footer strong {
+    margin-top: 15rem; }
+  #footer a {
+    display: inline-block;
+    background: #4ac7c2;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.75s ease-out; }
+    #footer a:hover {
+      background: rgba(74, 67, 67, 0.85); }
+  #footer img {
+    height: 3rem;
+    margin: 1.5rem 0; }
+  #footer hr.socket {
+    border-top: 0.2rem solid #4ac7c2;
+    width: 100%; }
+  #footer.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+/*---Media Queries --*/
+@media (max-width: 767px) {
+  .narrow h3 {
+    font-size: 1.6rem; }
+  .narrow p.lead {
+    font-size: 1.2rem;
+    font-weight: 200; }
+  .container .card-aos {
+    display: block; } }
+
+@media (max-width: 576px) {
+  .narrow h3 {
+    font-size: 1.1rem; }
+  .narrow p.lead {
+    font-size: 0.8rem;
+    font-weight: 100; } }

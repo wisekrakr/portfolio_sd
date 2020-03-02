@@ -1,0 +1,14 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "Portfolio page for David Buendia Cosano and his projects",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "david damian",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

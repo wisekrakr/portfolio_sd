@@ -1,0 +1,29 @@
+/*---Media Queries --*/
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+  .narrow {
+    h3 {
+      font-size: 1.6rem;
+    }
+    p.lead {
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+  }
+
+  .container .card-aos {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .narrow {
+    h3 {
+      font-size: 1.1rem;
+    }
+    p.lead {
+      font-size: 0.8rem;
+      font-weight: 100;
+    }
+  }
+}
